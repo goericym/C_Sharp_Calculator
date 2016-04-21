@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-     internal class ClassPlus : abstractClassPlus
+     internal class ClassPlus : abstractClass
     {
+ 
 
-        internal override double Result(double x,double y)
+        internal override double Result(double x, double y)
         {
             return x + y;
         }

@@ -49,6 +49,7 @@
     <Compile Include="Class\abstractClass.cs" />
     <Compile Include="Class\ClassClr.cs" />
     <Compile Include="Class\ClassDivid.cs" />
+    <Compile Include="Class\ClassFactory.cs" />
     <Compile Include="Class\ClassMultiply.cs" />
     <Compile Include="Class\ClassEqu.cs" />
     <Compile Include="Class\ClassDot.cs" />

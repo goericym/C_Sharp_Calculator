@@ -6,21 +6,10 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    internal abstract class abstractClassPlus
+    internal abstract class abstractClass
     {
 
         abstract internal double Result(double x, double y);
     }
-    internal abstract class abstractClassMinus
-    {
-        abstract internal double Result(double x, double y);
-    }
-    internal abstract class abstractClassMultiply
-    {
-        abstract internal double Result(double x, double y);
-    }
-    internal abstract class abstractClassDivid
-    {
-        abstract internal double Result(double x, double y);
-    }
+ 
 }

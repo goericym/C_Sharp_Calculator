@@ -6,9 +6,13 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class ClassMultiply
+    class ClassMultiply: abstractClass
     {
-        internal double Result(double x, double y)
+
+
+ 
+
+        internal override double Result(double x, double y)
         {
             return x * y;
         }

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace Calculator
 {
-    class ClassDivid : abstractClassDivid
+    class ClassDivid : abstractClass
     {
+       
+
         internal override double Result(double x, double y)
         {
             if (y == 0)
@@ -15,7 +17,6 @@ namespace Calculator
                 return double.MaxValue;
             }
             return x / y;
-
         }
     }
 }

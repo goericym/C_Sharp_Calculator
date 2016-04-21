@@ -8,5 +8,11 @@ namespace Calculator
 {
     class ClassNP
     {
+        internal double Result(double v)
+        {
+            
+                return 0 - v;
+             
+        }
     }
 }

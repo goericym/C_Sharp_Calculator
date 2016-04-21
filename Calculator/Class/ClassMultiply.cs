@@ -8,5 +8,9 @@ namespace Calculator
 {
     class ClassMultiply
     {
+        internal double Result(double x, double y)
+        {
+            return x * y;
+        }
     }
 }

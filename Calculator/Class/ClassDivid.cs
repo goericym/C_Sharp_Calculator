@@ -15,6 +15,7 @@ namespace Calculator
                 return double.MaxValue;
             }
             return x / y;
+
         }
     }
 }

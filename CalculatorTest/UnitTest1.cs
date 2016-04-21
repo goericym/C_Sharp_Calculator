@@ -63,7 +63,42 @@ namespace CalculatorTest
             actual = target.Result(6, -2);
             Assert.AreEqual(expected, actual);
         }
-
+        [TestMethod]
+        public void MyTestMethodMultiply()
+        {
+            ClassMultiply target = new ClassMultiply(); // TODO: Initialize to an appropriate value
+            double expected = 6; // TODO: Initialize to an appropriate value
+            double actual;
+            actual = target.Result(3, 2);
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void MyTestMethodNP()
+        {
+            ClassNP target = new ClassNP(); // TODO: Initialize to an appropriate value
+            double expected = -3; // TODO: Initialize to an appropriate value
+            double actual;
+            actual = target.Result(3);
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void MyTestMethodNP1()
+        {
+            ClassNP target = new ClassNP(); // TODO: Initialize to an appropriate value
+            double expected = 3; // TODO: Initialize to an appropriate value
+            double actual;
+            actual = target.Result(-3);
+            Assert.AreEqual(expected, actual);
+        }
+        [TestMethod]
+        public void MyTestMethodDot()
+        {
+            ClassDot target = new ClassDot(); // TODO: Initialize to an appropriate value
+            double expected = 3; // TODO: Initialize to an appropriate value
+            double actual;
+            actual = target.Result(3,".");
+            Assert.AreEqual(expected, actual);
+        }
     }
-    
+
 }

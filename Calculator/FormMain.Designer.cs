@@ -119,6 +119,7 @@
             this.buttonNP.TabIndex = 14;
             this.buttonNP.Text = "+-";
             this.buttonNP.UseVisualStyleBackColor = true;
+            this.buttonNP.Click += new System.EventHandler(this.buttonNP_Click);
             // 
             // buttonEqu
             // 
@@ -138,6 +139,7 @@
             this.buttonDot.TabIndex = 12;
             this.buttonDot.Text = ".";
             this.buttonDot.UseVisualStyleBackColor = true;
+            this.buttonDot.Click += new System.EventHandler(this.buttonDot_Click);
             // 
             // button12
             // 
@@ -253,7 +255,7 @@
             // 
             this.button10.Location = new System.Drawing.Point(198, 209);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(55, 23);
+            this.button10.Size = new System.Drawing.Size(43, 23);
             this.button10.TabIndex = 3;
             this.button10.Text = "=";
             this.button10.UseVisualStyleBackColor = true;
@@ -263,7 +265,7 @@
             // 
             this.buttonClr.Location = new System.Drawing.Point(142, 209);
             this.buttonClr.Name = "buttonClr";
-            this.buttonClr.Size = new System.Drawing.Size(50, 23);
+            this.buttonClr.Size = new System.Drawing.Size(43, 23);
             this.buttonClr.TabIndex = 4;
             this.buttonClr.Text = "C";
             this.buttonClr.UseVisualStyleBackColor = true;
@@ -280,7 +282,6 @@
             this.Controls.Add(this.textBox1);
             this.Name = "FormMain";
             this.Text = "Form1";
-             
             this.tableLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

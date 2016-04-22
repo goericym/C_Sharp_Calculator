@@ -8,16 +8,19 @@ namespace Calculator
 {
     class ClassDot
     {
-        internal double Result(double v1, string v2)
+        internal string Result(string sTemp)
         {
-            string sTemp = v1.ToString();
+            if (sTemp=="")
+            {
+                sTemp = "0";
+            }
             if (sTemp.IndexOf(".") > 0)
             {
-                return v1;
+                return sTemp;
             }
             else
             {
-                return v1;
+                return string.Format("{0}.",sTemp);
             }
         }
     }

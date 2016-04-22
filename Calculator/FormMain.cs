@@ -28,14 +28,17 @@ namespace Calculator
             Button btnSelf = (Button)sender;
             string sValue1 = btnSelf.Text;
             string sValue2 = this.textBox1.Text;
-            if (sValue1=="0" && sValue2.StartsWith("0"))
+            if (sValue1 == "0" && sValue2.StartsWith("0"))
             {
                 return;
             }
-            if (sValue1 != "0" && sValue2.StartsWith("0"))
+
+            if (sValue1 != "0" && sValue2.StartsWith("0") && !sValue2.StartsWith("0."))
             {
+
                 sValue2 = sValue2.Remove(0);
             }
+
             this.textBox1.Text = sValue2 + sValue1;
 
         }
@@ -66,9 +69,8 @@ namespace Calculator
                 }
             }
 
-            ClassFactory doubleRes = new ClassFactory();
-            abstractClass ac = doubleRes.CreateFactory(Oper);
-            this.V1 = ac.Result(V1, V2);
+            ClassEqu CE = new ClassEqu(V1,V2, Oper);
+            this.V1 = CE.dResult;
             this.textBox1.Text = this.V1.ToString();
             bEqu = true;
         }
@@ -82,6 +84,27 @@ namespace Calculator
             V2 = 0;
             Oper = "";
             bEqu = false;
+        }
+
+        private void buttonNP_Click(object sender, EventArgs e)
+        {
+            ClassNP NP = new ClassNP();
+            double dTemp = 0;
+            bool bRes = double.TryParse(this.textBox1.Text, out dTemp);
+            if (bRes)
+            {
+                dTemp = NP.Result(dTemp);
+                this.textBox1.Text = dTemp.ToString();
+            }
+
+        }
+
+        private void buttonDot_Click(object sender, EventArgs e)
+        {
+            ClassDot CD = new ClassDot();
+             
+           string bbb = CD.Result(this.textBox1.Text);
+            textBox1.Text = bbb.ToString();
         }
     }
 }

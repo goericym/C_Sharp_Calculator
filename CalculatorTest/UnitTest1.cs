@@ -94,9 +94,9 @@ namespace CalculatorTest
         public void MyTestMethodDot()
         {
             ClassDot target = new ClassDot(); // TODO: Initialize to an appropriate value
-            double expected = 3; // TODO: Initialize to an appropriate value
-            double actual;
-            actual = target.Result(3,".");
+            string expected = "3."; // TODO: Initialize to an appropriate value
+            string actual;
+            actual = target.Result("3");
             Assert.AreEqual(expected, actual);
         }
     }
